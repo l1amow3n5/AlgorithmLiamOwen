@@ -28,9 +28,35 @@ public class AlgorithmViewController: UIViewController
         let stepThree : String = "Now you should move the AppDelegate.swift, Assets.xcassests, and Info.plist files into the Resources group, next move the ViewController.swift file into the Controller group, Last you need to add the Main.storyboard and LaunchScreen."
         let stepFour : String = "you need to click on you project in the navigator and select your info.plist in the Identity section"
         let stepFive : String = "Now you have to connect your ViewConroller file to you Main.storyboard by going to the Main.storyboard selecting the yellow circle with the square in the middle and making sure the name in the identity inspector is the same as your ViewController.swift file."
-
+        
+        let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive]
+        
+        let attributesDicitonary = [NSAttributedStringKey.font : algorithmText.font]
+        let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDicitonary)
+        
+        for step in algorithm
+            /*
+             This code sets up the fortmat and bullet
+                */
+        {
+            let bullet : String = "🤖"
+            let formattedStep : String = "\n\(bullet)  \(step)"
+            let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString (string: formattedStep)
+            let outlineStyle = createOutlineStyle()
+            
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : outlineStyle], range:
+                NSMakeRange(0, attributedStringStep.length))
+            
+            fullAttributedString.append(attributedStringStep)
+            
+        }
+        
+        algorithmText.attributedText = fullAttributedString
     }
+    
 
+    
+    
     private func createOutlineStyle() -> NSParagraphStyle
     {
         let outlineStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
