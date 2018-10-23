@@ -18,7 +18,30 @@ public class AlgorithmViewController: UIViewController
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    private func formatAlgorithm() -> Void
+    {
+        let title : String = "How to make and iOS app"
+        
+        let stepOne : String = "Open Xcode and select the create a new Xcode project, Name your project whatever you want to name it and do not use spaces."
+        let stepTwo : String = "Select the folder you want your project to be saved in, now on the right hand side in the Navigator make four new groups and and name them the Model, Resources, Controller, and View, then create a new file in the Model group and call it somethingTool.swift ex. AlgorithmTool.swift"
+        let stepThree : String = "Now you should move the AppDelegate.swift, Assets.xcassests, and Info.plist files into the Resources group, next move the ViewController.swift file into the Controller group, Last you need to add the Main.storyboard and LaunchScreen."
+        let stepFour : String = "you need to click on you project in the navigator and select your info.plist in the Identity section"
+        let stepFive : String = "Now you have to connect your ViewConroller file to you Main.storyboard by going to the Main.storyboard selecting the yellow circle with the square in the middle and making sure the name in the identity inspector is the same as your ViewController.swift file."
 
+    }
+
+    private func createOutlineStyle() -> NSParagraphStyle
+    {
+        let outlineStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
+        
+        outlineStyle.alignment = .left
+        outlineStyle.defaultTabInterval = 15
+        outlineStyle.firstLineHeadIndent = 20
+        outlineStyle.headIndent = 35
+        
+        return outlineStyle
+    }
 
 }
 
