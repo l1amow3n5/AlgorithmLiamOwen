@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,14 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6oQ-2a-FeF">
-                                <rect key="frame" x="0.0" y="576" width="375" height="110"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="6Cb-g8-MLZ"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pB0-HC-LQx">
-                                <rect key="frame" x="0.0" y="292" width="375" height="209"/>
+                                <rect key="frame" x="16" y="44" width="343" height="457"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
@@ -35,16 +30,22 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6oQ-2a-FeF">
+                                <rect key="frame" x="16" y="562" width="343" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="DvQ-km-We9"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="pB0-HC-LQx" secondAttribute="trailing" id="HCh-7r-b5S"/>
-                            <constraint firstItem="6oQ-2a-FeF" firstAttribute="top" secondItem="pB0-HC-LQx" secondAttribute="bottom" constant="75" id="IUe-CG-aK1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6oQ-2a-FeF" secondAttribute="bottom" constant="92" id="Kkv-QI-UMP"/>
-                            <constraint firstItem="pB0-HC-LQx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="248" id="Kmi-cz-hRD"/>
-                            <constraint firstItem="pB0-HC-LQx" firstAttribute="trailing" secondItem="6oQ-2a-FeF" secondAttribute="trailing" id="MOh-a0-rtf"/>
-                            <constraint firstItem="pB0-HC-LQx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PaS-ym-Qd5"/>
-                            <constraint firstItem="pB0-HC-LQx" firstAttribute="leading" secondItem="6oQ-2a-FeF" secondAttribute="leading" id="qwB-xh-ROn"/>
+                            <constraint firstItem="pB0-HC-LQx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4L8-Zr-Kz4"/>
+                            <constraint firstItem="6oQ-2a-FeF" firstAttribute="top" secondItem="pB0-HC-LQx" secondAttribute="bottom" constant="61" id="5Hw-ih-lba"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6oQ-2a-FeF" secondAttribute="bottom" constant="106" id="OIi-jR-JAe"/>
+                            <constraint firstItem="pB0-HC-LQx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WMV-NF-Igf"/>
+                            <constraint firstItem="pB0-HC-LQx" firstAttribute="leading" secondItem="6oQ-2a-FeF" secondAttribute="leading" id="aKE-mJ-hyM"/>
+                            <constraint firstItem="pB0-HC-LQx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="phR-A4-baA"/>
+                            <constraint firstItem="pB0-HC-LQx" firstAttribute="trailing" secondItem="6oQ-2a-FeF" secondAttribute="trailing" id="yZc-D7-faY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -55,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="117.48768472906404"/>
+            <point key="canvasLocation" x="116" y="116.74876847290641"/>
         </scene>
     </scenes>
 </document>

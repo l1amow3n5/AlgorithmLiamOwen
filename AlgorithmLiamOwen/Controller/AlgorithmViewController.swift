@@ -17,6 +17,7 @@ public class AlgorithmViewController: UIViewController
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        formatAlgorithm()
     }
     
     private func formatAlgorithm() -> Void
