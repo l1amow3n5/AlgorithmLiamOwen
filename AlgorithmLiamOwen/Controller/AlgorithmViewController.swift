@@ -22,7 +22,7 @@ public class AlgorithmViewController: UIViewController
     
     private func formatAlgorithm() -> Void
     {
-        let title : String = "How to make and iOS app"
+        let title : String = "How to make an iOS app"
         
         let stepOne : String = "Open Xcode and select the create a new Xcode project, Name your project whatever you want to name it and do not use spaces."
         let stepTwo : String = "Select the folder you want your project to be saved in, now on the right hand side in the Navigator make four new groups and and name them the Model, Resources, Controller, and View, then create a new file in the Model group and call it somethingTool.swift ex. AlgorithmTool.swift"

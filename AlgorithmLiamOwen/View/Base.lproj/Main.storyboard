@@ -20,32 +20,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pB0-HC-LQx">
-                                <rect key="frame" x="16" y="44" width="343" height="457"/>
+                                <rect key="frame" x="16" y="44" width="343" height="510"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" size="17" name=".SFNSText"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6oQ-2a-FeF">
-                                <rect key="frame" x="16" y="562" width="343" height="110"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiftSample" translatesAutoresizingMaskIntoConstraints="NO" id="6oQ-2a-FeF">
+                                <rect key="frame" x="16" y="562" width="343" height="227"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="DvQ-km-We9"/>
+                                    <constraint firstAttribute="height" constant="227" id="ubo-R9-uZ1"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pB0-HC-LQx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4L8-Zr-Kz4"/>
-                            <constraint firstItem="6oQ-2a-FeF" firstAttribute="top" secondItem="pB0-HC-LQx" secondAttribute="bottom" constant="61" id="5Hw-ih-lba"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6oQ-2a-FeF" secondAttribute="bottom" constant="106" id="OIi-jR-JAe"/>
-                            <constraint firstItem="pB0-HC-LQx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WMV-NF-Igf"/>
-                            <constraint firstItem="pB0-HC-LQx" firstAttribute="leading" secondItem="6oQ-2a-FeF" secondAttribute="leading" id="aKE-mJ-hyM"/>
-                            <constraint firstItem="pB0-HC-LQx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="phR-A4-baA"/>
-                            <constraint firstItem="pB0-HC-LQx" firstAttribute="trailing" secondItem="6oQ-2a-FeF" secondAttribute="trailing" id="yZc-D7-faY"/>
+                            <constraint firstItem="6oQ-2a-FeF" firstAttribute="top" secondItem="pB0-HC-LQx" secondAttribute="bottom" constant="8" symbolic="YES" id="1VE-pt-R0Y"/>
+                            <constraint firstItem="pB0-HC-LQx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4JF-3z-mKq"/>
+                            <constraint firstItem="pB0-HC-LQx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Jcs-dW-98b"/>
+                            <constraint firstItem="pB0-HC-LQx" firstAttribute="trailing" secondItem="6oQ-2a-FeF" secondAttribute="trailing" id="eLd-qO-ITB"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="6oQ-2a-FeF" secondAttribute="bottom" constant="-11" id="uq1-vg-FIC"/>
+                            <constraint firstItem="pB0-HC-LQx" firstAttribute="leading" secondItem="6oQ-2a-FeF" secondAttribute="leading" id="yWR-Ag-WCY"/>
+                            <constraint firstItem="pB0-HC-LQx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yv6-uq-PwO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -59,4 +59,7 @@
             <point key="canvasLocation" x="116" y="116.74876847290641"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="swiftSample" width="1248" height="1244"/>
+    </resources>
 </document>
