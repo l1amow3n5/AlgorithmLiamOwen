@@ -24,7 +24,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Label">
                                         <attributes>
-                                            <font key="NSFont" size="17" name=".SFNSText"/>
+                                            <font key="NSFont" size="13" name=".SFNSText"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
